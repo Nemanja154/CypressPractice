@@ -15,8 +15,10 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "https://react-redux.realworld.io/#/login?_k=8alav0",
-    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'
+    baseUrl: "https://react-redux.realworld.io/",
+    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+    includeShadowDom: true
+
   },
   
 });
